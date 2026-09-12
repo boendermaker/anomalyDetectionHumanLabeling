@@ -1,0 +1,14 @@
+services:
+  tf-app:
+    build: .
+    container_name: tf_predictive_maintenance
+    # DIESER BLOCK MUSS REIN:
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+    stdin_open: true
+    tty: true

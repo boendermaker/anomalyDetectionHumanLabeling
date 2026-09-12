@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Multi-TimeSeries Anomaly Detection</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <style>
+        .chart-box {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-100 text-slate-800 font-sans p-6">
+
+    <div class="max-w-6xl mx-auto space-y-6">
+
+        <header class="flex justify-between items-center bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+            <div>
+                <h1 class="text-2xl font-bold text-slate-900">IoT Multi-TimeSeries Anomaly Detection</h1>
+                <p class="text-slate-500 text-sm mt-1">LSTM-Autoencoder & Human-in-the-Loop Labeling</p>
+            </div>
+            <button id="reset-all-btn"
+                class="bg-rose-600 hover:bg-rose-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition shadow-sm">
+                Alles zurücksetzen (Reset)
+            </button>
+        </header>
+
+        <!-- Section 1: Trainingsdaten & Selection -->
+        <main class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+                <h2 class="text-lg font-semibold text-slate-900">1. Klassifizierte Trainingsdaten & Human-in-the-Loop
+                    Labeling</h2>
+
+                <div class="flex items-center gap-2">
+                    <button id="generate-btn"
+                        class="bg-sky-600 hover:bg-sky-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition">
+                        Neue Trainingsdaten Generieren
+                    </button>
+                    <span id="selection-status"
+                        class="bg-slate-100 text-slate-600 font-medium px-3 py-2 rounded-lg text-sm border border-slate-200">
+                        0 Punkte ausgewählt
+                    </span>
+                    <button id="mark-anomaly-btn"
+                        class="bg-amber-600 hover:bg-amber-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition disabled:opacity-50"
+                        disabled>
+                        Als Anomalie markieren
+                    </button>
+                    <button id="clear-selection-btn"
+                        class="bg-slate-500 hover:bg-slate-600 text-white font-medium px-3 py-2 rounded-lg text-sm transition disabled:opacity-50"
+                        disabled>
+                        Auswahl aufheben
+                    </button>
+                    <button id="train-btn"
+                        class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition">
+                        Modell Trainieren (/train)
+                    </button>
+                </div>
+            </div>
+
+            <p id="info-status" class="text-xs text-slate-500">Lade Daten...</p>
+
+            <div id="chartdiv" class="chart-box bg-slate-50 rounded-lg border border-slate-200"></div>
+        </main>
+
+        <!-- Section 2: Anomalie-Erkennung / Vorhersage -->
+        <section class="bg-white p-6 rounded-xl shadow-sm border border-slate-200 space-y-4">
+            <div class="flex flex-wrap items-center justify-between gap-3">
+                <div>
+                    <h2 class="text-lg font-semibold text-slate-900">2. Modell-Vorhersage & Anomalie-Erkennung</h2>
+                    <p class="text-slate-500 text-xs mt-0.5">Zeigt den Rekonstruktionsfehler (MSE) und erkannte
+                        Abweichungen des Autoencoders.</p>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <button id="generate-predict-btn"
+                        class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition">
+                        Zufällige Testdaten generieren & Predict
+                    </button>
+                    <button id="predict-btn"
+                        class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition">
+                        Trainingsdaten analysieren (/predict)
+                    </button>
+                </div>
+            </div>
+
+            <p id="predict-status" class="text-xs text-slate-500">Warte auf Vorhersage-Start...</p>
+
+            <div id="chartdiv2" class="chart-box bg-slate-50 rounded-lg border border-slate-200"></div>
+        </section>
+
+    </div>
+
+    <script>
+        let root1, chart1, xAxis1, yAxis1;
+        let root2, chart2, xAxis2, yAxis2;
+        let seriesMap1 = new Map();
+        let seriesMap2 = new Map();
+        let anomalySeries2;
+        let rawData = [];
+        let testData = [];
+        let selectedIndices = new Set();
+
+        am5.ready(function () {
+            root1 = am5.Root.new("chartdiv");
+            root1.setThemes([am5themes_Animated.new(root1)]);
+
+            chart1 = root1.container.children.push(
+                am5xy.XYChart.new(root1, {
+                    panX: true, panY: true, wheelX: "panX", wheelY: "zoomX", pinchZoomX: true
+                })
+            );
+
+            xAxis1 = chart1.xAxes.push(am5xy.DateAxis.new(root1, {
+                baseInterval: {timeUnit: "second", count: 1},
+                renderer: am5xy.AxisRendererX.new(root1, {})
+            }));
+
+            yAxis1 = chart1.yAxes.push(am5xy.ValueAxis.new(root1, {
+                renderer: am5xy.AxisRendererY.new(root1, {})
+            }));
+
+            chart1.set("cursor", am5xy.XYCursor.new(root1, {behavior: "zoomX"}));
+
+            root2 = am5.Root.new("chartdiv2");
+            root2.setThemes([am5themes_Animated.new(root2)]);
+
+            chart2 = root2.container.children.push(
+                am5xy.XYChart.new(root2, {
+                    panX: true, panY: true, wheelX: "panX", wheelY: "zoomX", pinchZoomX: true
+                })
+            );
+
+            xAxis2 = chart2.xAxes.push(am5xy.DateAxis.new(root2, {
+                baseInterval: {timeUnit: "second", count: 1},
+                renderer: am5xy.AxisRendererX.new(root2, {})
+            }));
+
+            yAxis2 = chart2.yAxes.push(am5xy.ValueAxis.new(root2, {
+                renderer: am5xy.AxisRendererY.new(root2, {})
+            }));
+
+            anomalySeries2 = chart2.series.push(am5xy.LineSeries.new(root2, {
+                name: "Erkannte Anomalien",
+                xAxis: xAxis2,
+                yAxis: yAxis2,
+                valueYField: "anomalyValue",
+                valueXField: "date",
+                tooltip: am5.Tooltip.new(root2, {labelText: "ANOMALIE [{device_id}]! MSE: {mse}"})
+            }));
+            anomalySeries2.strokes.template.setAll({strokeWidth: 0});
+            anomalySeries2.bullets.push(function () {
+                return am5.Bullet.new(root2, {
+                    sprite: am5.Circle.new(root2, {radius: 6, fill: am5.color(0xe11d48)})
+                });
+            });
+
+            chart2.set("cursor", am5xy.XYCursor.new(root2, {behavior: "zoomX"}));
+
+            fetchData();
+        });
+
+        function updateChart1Series(data) {
+            const grouped = {};
+            data.forEach((pt, index) => {
+                const dev = pt.device_id || 'default';
+                if (!grouped[dev]) grouped[dev] = [];
+                grouped[dev].push({
+                    ...pt,
+                    originalIndex: index,
+                    date: new Date(pt.timestamp).getTime()
+                });
+            });
+
+            Object.keys(grouped).forEach(deviceId => {
+                if (!seriesMap1.has(deviceId)) {
+                    const s1 = chart1.series.push(am5xy.LineSeries.new(root1, {
+                        name: deviceId,
+                        xAxis: xAxis1,
+                        yAxis: yAxis1,
+                        valueYField: "current",
+                        valueXField: "date",
+                        tooltip: am5.Tooltip.new(root1, {labelText: "{device_id}: {valueY} A"})
+                    }));
+
+                    s1.bullets.push(function (root, series, dataItem) {
+                        const ctx = dataItem.dataContext;
+                        const idx = ctx.originalIndex;
+                        let color = 0x0284c7;
+                        if (ctx.humanLabel === 'anomaly') color = 0xd97706;
+                        if (selectedIndices.has(idx)) color = 0xe11d48;
+
+                        const circle = am5.Circle.new(root, {
+                            radius: 4,
+                            fill: am5.color(color),
+                            interactive: true,
+                            cursorOverStyle: "pointer"
+                        });
+
+                        circle.events.on("click", function () {
+                            if (selectedIndices.has(idx)) selectedIndices.delete(idx);
+                            else selectedIndices.add(idx);
+                            updateSelectionUI();
+                            updateChart1Series(rawData);
+                        });
+
+                        return am5.Bullet.new(root, {sprite: circle});
+                    });
+
+                    seriesMap1.set(deviceId, s1);
+                }
+                seriesMap1.get(deviceId).data.setAll(grouped[deviceId]);
+            });
+        }
+
+        function updateChart2Series(data) {
+            const grouped = {};
+            data.forEach((pt, index) => {
+                const dev = pt.device_id || 'default';
+                if (!grouped[dev]) grouped[dev] = [];
+                grouped[dev].push({
+                    ...pt,
+                    originalIndex: index,
+                    date: new Date(pt.timestamp).getTime()
+                });
+            });
+
+            Object.keys(grouped).forEach(deviceId => {
+                if (!seriesMap2.has(deviceId)) {
+                    const s2 = chart2.series.push(am5xy.LineSeries.new(root2, {
+                        name: deviceId,
+                        xAxis: xAxis2,
+                        yAxis: yAxis2,
+                        valueYField: "current",
+                        valueXField: "date"
+                    }));
+                    s2.strokes.template.setAll({strokeWidth: 1.5});
+                    seriesMap2.set(deviceId, s2);
+                }
+                seriesMap2.get(deviceId).data.setAll(grouped[deviceId]);
+            });
+        }
+
+        async function fetchData() {
+            try {
+                const res = await fetch('/data');
+                const result = await res.json();
+                rawData = result.data || [];
+
+                document.getElementById('info-status').innerText = `${rawData.length} Datenpunkte geladen.`;
+                selectedIndices.clear();
+                updateSelectionUI();
+
+                updateChart1Series(rawData);
+                updateChart2Series(rawData);
+                anomalySeries2.data.setAll([]);
+            } catch (err) {
+                console.error("Fehler beim Abrufen der Daten:", err);
+            }
+        }
+
+        function updateSelectionUI() {
+            const count = selectedIndices.size;
+            document.getElementById('selection-status').innerText = `${count} Punkte ausgewählt`;
+            document.getElementById('mark-anomaly-btn').disabled = count === 0;
+            document.getElementById('clear-selection-btn').disabled = count === 0;
+        }
+
+        async function runPredictionOnData(dataset) {
+            if (!dataset || dataset.length === 0) return alert("Keine Daten für Vorhersage vorhanden!");
+
+            document.getElementById('predict-status').innerText = "Berechne Abweichungen...";
+
+            try {
+                const res = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(dataset)
+                });
+
+                const result = await res.json();
+                const predictions = result.predictions || [];
+
+                const formattedData = dataset.map((pt, index) => {
+                    const pred = predictions[index] || {};
+                    return {
+                        ...pt,
+                        date: new Date(pt.timestamp).getTime(),
+                        mse: pred.mse ? pred.mse.toFixed(4) : "0",
+                        anomalyValue: pred.isAnomaly ? pt.current : null
+                    };
+                });
+
+                updateChart2Series(dataset);
+                anomalySeries2.data.setAll(formattedData.filter(pt => pt.anomalyValue !== null));
+
+                const anomalyCount = predictions.filter(p => p.isAnomaly).length;
+                document.getElementById('predict-status').innerText = `Analyse abgeschlossen: ${anomalyCount} Anomalien erkannt.`;
+            } catch (err) {
+                console.error("Fehler bei Vorhersage:", err);
+                document.getElementById('predict-status').innerText = "Fehler bei der Vorhersage.";
+            }
+        }
+
+        document.getElementById('mark-anomaly-btn').addEventListener('click', () => {
+            selectedIndices.forEach(index => {
+                if (rawData[index]) {
+                    rawData[index].humanLabel = 'anomaly';
+                }
+            });
+            selectedIndices.clear();
+            updateSelectionUI();
+            updateChart1Series(rawData);
+        });
+
+        document.getElementById('clear-selection-btn').addEventListener('click', () => {
+            selectedIndices.clear();
+            updateSelectionUI();
+            updateChart1Series(rawData);
+        });
+
+        document.getElementById('generate-btn').addEventListener('click', async () => {
+            document.getElementById('info-status').innerText = "Generiere zufällige Multi-TimeSeries Trainingsdaten...";
+            await fetch('/generate', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({totalSteps: 200})
+            });
+            await fetchData();
+        });
+
+        document.getElementById('generate-predict-btn').addEventListener('click', async () => {
+            document.getElementById('predict-status').innerText = "Generiere neue Testdaten für Chart 2...";
+            try {
+                const res = await fetch('/generate-test-data', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({totalSteps: 200})
+                });
+                const result = await res.json();
+                testData = result.data || [];
+
+                await runPredictionOnData(testData);
+            } catch (err) {
+                console.error("Fehler beim Generieren der Testdaten:", err);
+            }
+        });
+
+        document.getElementById('train-btn').addEventListener('click', async () => {
+            document.getElementById('info-status').innerText = "Trainiere Modell...";
+            try {
+                const res = await fetch('/train', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(rawData)
+                });
+                const result = await res.json();
+                alert(result.message || "Training abgeschlossen!");
+                document.getElementById('info-status').innerText = "Modell erfolgreich trainiert.";
+            } catch (err) {
+                alert("Fehler beim Training.");
+            }
+        });
+
+        document.getElementById('predict-btn').addEventListener('click', async () => {
+            await runPredictionOnData(rawData);
+        });
+
+        document.getElementById('reset-all-btn').addEventListener('click', async () => {
+            if (!confirm("Alle Daten und Charts zurücksetzen?")) return;
+            await fetch('/data', {method: 'DELETE'});
+            rawData = [];
+            testData = [];
+            selectedIndices.clear();
+            updateSelectionUI();
+
+            seriesMap1.forEach(s => s.data.setAll([]));
+            seriesMap2.forEach(s => s.data.setAll([]));
+            anomalySeries2.data.setAll([]);
+
+            document.getElementById('info-status').innerText = "Speicher zurückgesetzt.";
+            document.getElementById('predict-status').innerText = "Warte auf Vorhersage-Start...";
+        });
+    </script>
+</body>
+
+</html>
