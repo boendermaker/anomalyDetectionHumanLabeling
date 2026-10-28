@@ -1,0 +1,17 @@
+{
+  "features": [
+    "current",
+    "temperature",
+    "vibration"
+  ],
+  "min": {
+    "current": 1.7905,
+    "temperature": 17.7808,
+    "vibration": 0.3503
+  },
+  "max": {
+    "current": 7.4328,
+    "temperature": 74.1112,
+    "vibration": 0.7494
+  }
+}

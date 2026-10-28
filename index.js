@@ -1,7 +1,7 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import ModelTrainer from './trainmodel.class.js';
+import ModelTrainer from './trainer.class.js';
 import DataGenerator from './datagenerator.class.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -54,40 +54,6 @@ app.delete('/data', (req, res) => {
     res.json({ message: 'Rohdatenspeicher geleert.' });
 });
 
-function generateDataset(totalSteps, devices) {
-    const randomBase = 2.0;
-
-    const stages = [
-        {
-            from: 0,
-            to: totalSteps - 1,
-            callback: () => ({ value: randomBase + (Math.random() * 0.2 - 0.1), isAnomaly: false })
-        }
-    ];
-
-    const generator = new DataGenerator(totalSteps, stages, devices);
-    return generator.generate();
-}
-
-app.post('/generate', (req, res) => {
-    try {
-        const totalSteps = req.body.totalSteps || 200;
-        const devices = req.body.devices || ['sensor-01', 'sensor-02', 'sensor-03'];
-
-        const generatedData = generateDataset(totalSteps, devices);
-        trainer.rawData.push(...generatedData);
-
-        res.json({
-            message: `${generatedData.length} saubere Trainingsdatenpunkte generiert.`,
-            totalStoredSamples: trainer.rawData.length,
-            data: generatedData
-        });
-    } catch (err) {
-        console.error('Fehler bei der Datengenerierung:', err.message);
-        res.status(500).json({ error: err.message });
-    }
-});
-
 app.post('/generate-test-data', (req, res) => {
     try {
         const totalSteps = req.body.totalSteps || 200;
@@ -107,21 +73,51 @@ app.post('/generate-test-data', (req, res) => {
 
 app.post('/train', async (req, res) => {
     try {
-        if (req.body && Array.isArray(req.body) && req.body.length > 0) {
-            trainer.rawData = req.body;
+        let data = null;
+        let selectedIndices = [];
+
+        // Verträgliche Formate:
+        //  1) req.body = [records...]            (legacy: Array)
+        //  2) req.body = { data: [records...], selectedIndices: [idx, ...] }
+        if (Array.isArray(req.body)) {
+            data = req.body.length > 0 ? req.body : null;
+        } else if (req.body && typeof req.body === 'object') {
+            if (Array.isArray(req.body.data) && req.body.data.length > 0) {
+                data = req.body.data;
+            }
+            if (Array.isArray(req.body.selectedIndices)) {
+                selectedIndices = req.body.selectedIndices;
+            }
+        }
+
+        if (data) {
+            trainer.rawData = data;
         }
 
         console.log('Starte Modell-Training...');
-        await trainer.train();
+        console.log(`  Trainingsmodus: ${selectedIndices.length > 0 ? 'nur ausgewählte Punkte (' + selectedIndices.length + ')' : 'alle historischen Daten'}`);
+        const summary = await trainer.train(data, selectedIndices);
 
         res.json({
-            message: 'Autoencoder-Modell erfolgreich trainiert.',
-            processedSamples: trainer.rawData.length
+            message: summary.message,
+            processedSamples: trainer.rawData.length,
+            ...summary
         });
     } catch (err) {
         console.error('Fehler beim Training:', err.message);
         res.status(400).json({ error: err.message });
     }
+});
+
+// Persistierte Feature-Statistik (Min/Max pro Kanal) anzeigen.
+app.get('/stats', (req, res) => {
+    res.json({
+        features: trainer.stats?.features ?? null,
+        min: trainer.stats?.min ?? null,
+        max: trainer.stats?.max ?? null,
+        threshold: trainer.anomalyThreshold,
+        timeSteps: trainer.timeSteps
+    });
 });
 
 app.post('/predict', async (req, res) => {
@@ -134,12 +130,10 @@ app.post('/predict', async (req, res) => {
             });
         }
 
-        const results = await trainer.predict(inputData);
+        // predict() lädt Modell und Statistikdaten automatisch, falls noch nicht geladen.
+        const result = await trainer.predict(inputData);
 
-        res.json({
-            predictionsCount: results.length,
-            predictions: results
-        });
+        res.json(result);
     } catch (err) {
         console.error('Fehler bei der Vorhersage:', err.message);
         res.status(500).json({ error: err.message });

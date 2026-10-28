@@ -34,10 +34,15 @@ export class DataGenerator {
 
                 const timestamp = new Date(startTime + (i * 1000)).toISOString();
 
+                // Mehrere Kanäle pro Gerät & Zeitstempel (z. B. Temperatur, Vibration, Druck)
                 records.push({
                     device_id: deviceId,
                     timestamp: timestamp,
-                    current: parseFloat(finalValue.toFixed(4)),
+                    values: {
+                        current: parseFloat(finalValue.toFixed(4)),
+                        temperature: parseFloat((finalValue * 10 + (Math.random() - 0.5) * 0.8).toFixed(4)),
+                        vibration: parseFloat((0.4 + (Math.random() - 0.5) * 0.1 + (isAnomaly ? 0.3 : 0)).toFixed(4))
+                    },
                     humanLabel: isAnomaly ? 'anomaly' : 'normal'
                 });
             }

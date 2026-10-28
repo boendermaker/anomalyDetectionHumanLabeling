@@ -1,0 +1,20 @@
+{
+  "features": [
+    "bearing_temp_c",
+    "motor_current_a",
+    "vibration_mm_s",
+    "rpm"
+  ],
+  "min": {
+    "bearing_temp_c": 40.61,
+    "motor_current_a": 10.68,
+    "vibration_mm_s": 1.41,
+    "rpm": 1379
+  },
+  "max": {
+    "bearing_temp_c": 73.98,
+    "motor_current_a": 22.43,
+    "vibration_mm_s": 12.14,
+    "rpm": 1471
+  }
+}

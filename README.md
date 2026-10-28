@@ -1,77 +1,126 @@
 # IoT Multi-TimeSeries Anomaly Detection & Human-in-the-Loop Dashboard
 
-Ein interaktives Web-Dashboard zur visuellen Inspektion, Klassifizierung und KI-gestützten Anomalie-Erkennung in IoT-Zeitreihen. Die Anwendung kombiniert **amCharts 5** im Frontend für die interaktive Datenanalyse mit einer **Autoencoder-Architektur** im Backend.
+Ein interaktives Web-Dashboard zur visuellen Inspektion, Klassifizierung und KI-gestützten Anomalie-Erkennung in **mehrkanaligen historischen IoT-Zeitreihen**. Die Anwendung kombiniert **amCharts 5** im Frontend mit einem **LSTM-Autoencoder (TensorFlow.js)** im Backend.
 
-Über den **Human-in-the-Loop-Ansatz** können Anwender ungenaue oder fehlerhafte Sensordaten direkt im Chart markieren, um das KI-Modell gezielt auf echten Normalzuständen zu trainieren.
+Über den **Human-in-the-Loop-Ansatz** können Anwender fehlerhafte Messwerte **pro Sensor/Kanal** in beliebigen Zeitbereichen manuell als Anomalie markieren. Je nach Auswahl entscheidet das System, ob der Autoencoder auf **allen** verbleibenden Daten oder ausschließlich auf den **manuell ausgewählten** Punkten trainiert wird.
 
 ---
 
 ## Features
 
-* **Interaktives amCharts 5 Dashboard:**
-  * Performance-starkes Rendern von Zeitreihen (`XYChart`, `DateAxis`).
-  * Dynamisches Zoom- und Pan-Verhalten.
-  * Farbliche Unterscheidung von normalen Datenpunkten, manuellen Markierungen und vom Modell erkannten Anomalien.
-* **Human-in-the-Loop Labeling:**
-  * **Einzelpunkt-Auswahl:** Klick auf einzelne Datenpunkte (Bullets) zum Auswählen/Abwählen.
-  * **Bereichsauswahl (Selection Box):** Ziehen mit gedrückter Maustaste über das Chart zum Auswählen mehrerer Punkte gleichzeitig.
-  * Multi-Selection-Zähler und Übermittlung der gelabelten Punkte an das Backend.
-* **Autoencoder Anomaly Detection:**
-  * Automatischer Ausschluss von als `peak` / Anomalie markierten Punkten vor dem Trainingslauf.
-  * Training des Autoencoders ausschließlich auf unauffälligen Betriebsdaten.
+* **Mehrkanalige Zeitreihen (Multi-Serie):**
+  * Mehrere Geräte (z. B. `KOMP-A`, `KOMP-B`) und Messgrößen pro Gerät (`bearing_temp_c`, `motor_current_a`, `vibration_mm_s`, `rpm`).
+  * Pro Gerät ein eigenes amCharts-5-Chart (oben: manuelle Labeling, unten: Live-Erkennung).
+  * Legende mit pro-Kanal-Sichtbarkeit; Klick auf einen Kanaleintrag setzt ihn als **aktiven Kanal** für Markierungen.
+* **Daten-Upload (JSON):**
+  * Historische IoT-Daten werden über das Datei-Upload-Feld (`JSON hochladen`) geladen — keine Datengenerierung im UI.
+  * Zwei unterstützte Formate (siehe „Datenschema“): flache und verschachtelte pro-Measure-Labels.
+* **Bereichsauswahl (Selection Box) & pro-Measure-Labeling:**
+  * **Temporäre Bereichsauswahl:** mit gedrückter linker Maustaste über dem Chart ziehen — die Auswahl ist nur ein visuelles Hilfsmittel und verschwindet beim Loslassen.
+  * Die Auswahl betrifft ausschließlich den in der Legende aktiven Kanal.
+  * **Mehrere Kanäle in unterschiedlichen Zeitfenstern** unabhängig kombinierbar (z. B. `bearing_temp_c` 1–2 Uhr bei KOMP-A und `motor_current_a` 3–5 Uhr bei KOMP-B).
+  * **`Als Anomalie markieren`** schreibt `humanLabel: 'anomaly'` **nur für den aktiven Kanal** der gewählten Punkte.
+* **Autoencoder-Training (zwei Modi):**
+  * **Modus `all`:** leere Auswahl → Training auf der gesamten Datenbasis, wobei alle manuell als Anomalie gelabelten Sequenzen ausgeschlossen werden.
+  * **Modus `selected`:** nicht leere Auswahl → Training ausschließlich auf den ausgewählten Punkten (nur der jeweilige Kanal).
+  * Sequenzen unterhalb der Schrittlänge (`timeSteps`) bleiben automatisch erhalten — es wird nur die Basis gefiltert.
 * **Live Inferenz & Rekonstruktionsanalyse:**
-  * Erkennung von Abweichungen im Inferenz-Chart inkl. Ausgabe von Rekonstruktionsfehler (`reconstructionError`) und Status in den Tooltips.
+  * `Anomalien Prüfen (/predict)` bewertet die geladenen Daten mit dem trainierten Modell.
+  * Erkannte Abweichungen werden im unteren Chart als größere Punkte dargestellt; der Tooltip zeigt Rekonstruktionsfehler (`reconstructionError`) und Status pro Kanal.
+
+---
+
+## Datenschema
+
+### Verschachteltes Format (empfohlen, pro-Measure-Labels)
+
+```json
+{
+  "device_id": "KOMP-A",
+  "timestamp": "2026-10-14T00:00:00.000Z",
+  "values": {
+    "bearing_temp_c":  { "value": 49.41, "humanLabel": "normal" },
+    "motor_current_a": { "value": 13,    "humanLabel": "normal" },
+    "vibration_mm_s":  { "value": 2.18,  "humanLabel": "normal" },
+    "rpm":             { "value": 1446,  "humanLabel": "normal" }
+  }
+}
+```
+
+* `humanLabel`: `'normal'` (Standard) oder `'anomaly'` (manuell durch einen Menschen klassifiziert) — **pro Messgröße**.
+* `example-iot-data.json` (600 Aufzeichnungen, 2 Geräte, 4 Kanäle, 141 Anomalie-Kanal-Labels) liegt im Repo und ist direkt hochladbar.
+
+### Flaches Format (abwärtskompatibel)
+
+```json
+{
+  "device_id": "KOMP-A",
+  "timestamp": "2026-10-14T00:00:00.000Z",
+  "values": { "bearing_temp_c": 49.41, "motor_current_a": 13, "vibration_mm_s": 2.18, "rpm": 1446 },
+  "humanLabel": "anomaly"
+}
+```
+
+* Optionales Aufzeichnungs-Label `humanLabel: 'anomaly'` gilt dann für **alle Kanäle** der Zeile.
+
+Beide Formate werden von Frontend, Trainer und API verstanden.
 
 ---
 
 ## Voraussetzungen & Installation
 
-* **Node.js** (v16.0.0 oder höher)
+* **Node.js** (v18+ empfohlen, `tfjs-node` wird nativ installiert)
 * **npm** (in Node.js enthalten)
 
-1. Repository klonen:
-   git clone https://github.com/dein-username/dein-repo-name.git
-   cd dein-repo-name
+```bash
+git clone <repo-url> && cd <repo-name>
+npm install
+npm start
+```
 
-2. Abhängigkeiten installieren:
-   npm install
+Dashboard im Browser öffnen: **http://localhost:3000**
 
-3. Anwendung starten:
-   npm start
+Neue Demodaten erzeugen (optional):
 
-4. Dashboard im Browser öffnen:
-   http://localhost:3000
+```bash
+node make-example-data.js   # schreibt example-iot-data.json im verschachtelten Format
+```
 
 ---
 
-## Ablauf & Schritt-für-Schritt-Anleitung
+## Schritt-für-Schritt-Anleitung
 
-Das Dashboard gliedert sich in zwei aufeinander aufbauende Bereiche:
+### 1. Historische IoT-Daten hochladen
+* Klicke auf **`JSON hochladen`** und wähle die Datei (z. B. `example-iot-data.json`).
+* Die Aufzeichnungen werden je Gerät in den oberen Charts eingezeichnet; der Status zeigt z. B.
+  `600 Punkte geladen (47 davon als Anomalie klassifiziert)`.
 
-### 1. Trainingsdaten laden & generieren
-* Klicke im ersten Abschnitt auf **`Neue Daten Generieren`**.
-* Das Backend erstellt einen neuen Zeitreihen-Datensatz (`/generate`) und lädt diesen in den oberen Chart (`/data`).
+### 2. Datenpunkte pro Kanal markieren (Human-in-the-Loop)
+1. **Aktiven Kanal wählen:** Legende (z. B. `KOMP-A · bearing_temp_c`) anklicken — der Kanal wird blau hinterlegt.
+2. **Bereichsauswahl aktivieren:** Button `Bereichsauswahl: aus` → `ein`.
+3. **Zeitbereich ziehen:** linke Maustaste über dem Chart halten und ziehen. Die Auswahl ist temporär und färbt **genau die Liniensegmente des Drag-Bereichs** des **aktiven Kanals** rot (dicker Strich) — Punkte außerhalb des Bereichs bleiben unverfärbt.
+4. **`Als Anomalie markieren`:** die gewählten Punkte des aktiven Kanals erhalten `humanLabel: 'anomaly'` (dunkel-orange Liniensegmente, inkl. des Segments, das in den ersten markierten Punkt führt).
+5. **Weitere Bereiche/Kanäle:** andere Kanäle in der Legende wählen und weitere Zeitfenster markieren — beliebig kombinierbar.
+6. **`Auswahl aufheben`:** verwirft die aktuelle (noch nicht markierte) Auswahl.
+7. **`Alles zurücksetzen (Reset)`:** leert Daten, Labels und Auswahl.
 
-### 2. Datenpunkte interaktiv markieren (Human-in-the-Loop)
-Bevor das Modell trainiert wird, können fehlerhafte Messwerte oder Lastspitzen manuell herausgefiltert werden:
-1. **Punkte auswählen:**
-   * **Klick:** Auf ein blaues Bullet klicken, um einen einzelnen Punkt auszuwählen (wird gelb mit braunem Rand hervorgehoben).
-   * **Drag-Selection:** Mit gedrückter Maustaste einen Zeitbereich aufziehen. Alle Punkte in diesem Intervall werden automatisch ausgewählt.
-2. **Als Anomalie markieren:**
-   * Klicke auf **`Als Anomalie / Schlecht markieren`**.
-   * Die ausgewählten Punkte erhalten das Label `humanLabel: 'peak'` und werden rot eingefärbt.
-   * Das Ergebnis wird sofort per `POST /data` an das Backend übermittelt.
-3. **Auswahl zurücksetzen:**
-   * Über den Button **`Auswahl aufheben`** wird die aktuelle Gelb-Markierung verworfen.
+> Hinweis: Die manuellen Labels sind **seitennah** gespeichert und reisen mit dem nächsten Trainings-/Predict-Request. `Alles zurücksetzen` entfernt sie.
 
 ### 3. Autoencoder trainieren
-* Klicke auf **`Modell Trainieren (/train)`**.
-* Das Backend schließt alle als `peak` markierten Datenpunkte vom Training aus und trainiert den Autoencoder ausschließlich auf den verbliebenen Normaldaten.
+Klicke auf **`Modell Trainieren (/train)`**. Die Auswahl bestimmt den Modus:
 
-### 4. Live-Prediction durchführen
-* Scrolle zum Bereich **2. Live-Erkennung & Rekonstruktionsabweichung**.
-* Klicke auf **`Anomalien Prüfen (/predict)`**.
-* Die aktuellen Zeitreihendaten werden an den `/predict`-Endpunkt gesendet. Vom Modell identifizierte Abweichungen werden im unteren Chart als größere rote Punkte mit weißem Rand dargestellt. Der Tooltip zeigt den genauen Rekonstruktionsfehler.
+| Auswahl | Modus | Trainingsbasis |
+| :--- | :--- | :--- |
+| leer | `all` | alle Daten; Sequenzen, die einen manuellen Anomalie-Label enthalten, werden ausgeschlossen |
+| nicht leer | `selected` | ausschließlich die ausgewählten Punkte (pro ihrem Kanal) |
+
+Der Status meldet z. B. `Modell erfolgreich trainiert (553 Trainingspunkte, Modus: all)` bzw. `… (14 Trainingspunkte, Modus: selected)`.
+
+### 4. Live-Erkennung durchführen
+* **`Trainingsdaten analysieren (/predict)`** bewertet die hochgeladenen Zeilen mit dem trainierten Modell.
+* Erkannte Anomalien erscheinen im unteren Chart pro Gerät; der Tooltip zeigt
+  `Anomalie erkannt — Fehler: 0.045` bzw. `Normal` und die Werte aller Kanäle.
+* `Zufällige Testdaten generieren & Predict` erzeugt synthetische Testzeilen inkl. eingebetteter Störsignale für eine Demo-Inferenz.
 
 ---
 
@@ -79,20 +128,29 @@ Bevor das Modell trainiert wird, können fehlerhafte Messwerte oder Lastspitzen 
 
 | Endpunkt | Methode | Beschreibung |
 | :--- | :--- | :--- |
-| `/generate` | `POST` | Generiert neue IoT-Zeitreihen (Parameter: `points`, `anomalyProbability`). |
 | `/data` | `GET` | Ruft die aktuellen Rohdaten inklusive aller Human-Labels ab. |
-| `/data` | `POST` | Aktualisiert die Daten im Speicher (z. B. nach dem manuellen Labeln). |
-| `/train` | `POST` | Startet den Trainingsprozess des Autoencoders auf unauffälligen Daten. |
-| `/predict` | `POST` | Evaluierte übergebene Datenpunkte und gibt Rekonstruktionsfehler sowie Status zurück. |
+| `/data` | `POST` | Setzt die Rohdaten im Speicher (z. B. nach dem JSON-Upload). |
+| `/data` | `DELETE` | Leert den Datenspeicher. |
+| `/train` | `POST` | Startet das Training. Body: Daten-Array **oder** `{ data, selectedIndices }` — `selectedIndices` (Array von Punkt-Indizes) steuert den Modus `selected`. |
+| `/predict` | `POST` | Bewertet übergebene Datenpunkte; liefert `reconstructionError` und `isAnomaly` pro Punkt/Kanal. |
+| `/stats` | `GET` | Modell- und Trainingsstatistiken (Epochen, Features, Samples, …). |
+| `/generate-test-data` | `POST` | Erzeugt synthetische Testdaten mit eingebetteten Anomalien (nur für Predict-Demos). |
 
 ---
 
 ## Systemarchitektur & Tech Stack
 
-* **Frontend:** 
-  * HTML5, CSS3, JavaScript (ES6 Modules/Async-Await)
-  * **amCharts 5** (`am5`, `am5xy`, `Animated` Theme)
-* **Backend:** 
-  * Node.js, Express.js
-* **Machine Learning Pipeline:** 
-  * Tensor-basierter Autoencoder zur Rekonstruktion unauffälliger IoT-Muster
+* **Frontend:** HTML5, CSS3, JavaScript (ES-Modules/Async-Await), **amCharts 5** (`am5`, `am5xy`, `Animated` Theme) mit nativer `selectX`-Cursor-Bereichsauswahl.
+* **Backend:** Node.js, Express.js (Stateless-API; Daten und Labels leben in der Browser-Session bzw. im JSON).
+* **Machine Learning:** **TensorFlow.js (`tfjs-node`)** — LSTM-Autoencoder mit Multi-Head-Rekonstruktion (ein Decoder-Kopf pro Kanal), `timeSteps = 10`, `anomalyThreshold = 0.03`, `epochs = 30`, `batchSize = 32`.
+* **Modelldatei:** persistiert unter `./model` (wird nach jedem Training neu geschrieben).
+
+### Projektstruktur (relevant)
+
+| Datei | Zweck |
+| :--- | :--- |
+| `index.js` | Express-Server und API-Endpunkte. |
+| `trainer.class.js` | Autoencoder, Dual-Format-Parser, `buildTimelines`, Trainings-/Predict-Logik. |
+| `public/index.html` | Dashboard: Upload, Legende, Bereichsauswahl, Markierung, Training, Predict. |
+| `make-example-data.js` | Erzeugt `example-iot-data.json` (verschachteltes pro-Measure-Format). |
+| `docs/pro-sensor-bereichsauswahl.md` | Re-Implementierungs-Dokumentation für die pro-Sensor-Bereichsauswahl. |

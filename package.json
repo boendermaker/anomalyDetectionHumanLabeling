@@ -12,5 +12,9 @@
   "dependencies": {
     "@tensorflow/tfjs-node": "^4.22.0",
     "express": "^5.2.1"
+  },
+  "allowScripts": {
+    "@tensorflow/tfjs-node@4.22.0": true,
+    "core-js@3.29.1": true
   }
 }
