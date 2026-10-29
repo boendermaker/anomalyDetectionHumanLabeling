@@ -27,7 +27,7 @@ Diese Projekt enthält drei vorbereitete Beispieldatensätze für das Anomalie-E
 ## Data 1 — `example-iot-data.json`
 
 **Erzeugen:** `node make-example-data.js`
-**Szenario:** Zwei Kompressoren (`KOMP-A`, `KOMP-B`), ein Messwert pro Stunde über **600 Stunden** (~25 Tage).
+**Szenario:** Zwei Kompressoren (`KOMP-A`, `KOMP-B`), ein Messwert pro Stunde je Gerät über **300 Stunden** (~12,5 Tage) → **600 Aufzeichnungen** gesamt (2 Geräte × 300 h).
 
 Zwei physikalisch gekoppelte Anomalie-Episoden sind eingebettet:
 
