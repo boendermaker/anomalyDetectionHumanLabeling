@@ -6,15 +6,16 @@
     "rpm"
   ],
   "min": {
-    "bearing_temp_c": 40.61,
-    "motor_current_a": 10.68,
-    "vibration_mm_s": 1.41,
-    "rpm": 1379
+    "bearing_temp_c": 52.75,
+    "motor_current_a": 7.58,
+    "vibration_mm_s": 1.54,
+    "rpm": 1469
   },
   "max": {
-    "bearing_temp_c": 54.12,
-    "motor_current_a": 14.88,
-    "vibration_mm_s": 3.18,
-    "rpm": 1471
-  }
+    "bearing_temp_c": 86.33,
+    "motor_current_a": 47.55,
+    "vibration_mm_s": 13.21,
+    "rpm": 1495
+  },
+  "anomalyThreshold": 0.022721
 }

@@ -105,6 +105,18 @@
                         disabled>
                         Auswahl aufheben
                     </button>
+                    <label for="timesteps-input" class="text-xs text-slate-500 font-medium">
+                        Fensterlänge
+                    </label>
+                    <input id="timesteps-input" type="number" min="2" max="100" step="1" value="10"
+                        title="Anzahl der Zeitschritte pro Fenster (timeSteps)"
+                        class="w-20 bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm text-slate-800">
+                    <label for="threshold-input" class="text-xs text-slate-500 font-medium">
+                        Anomalie-Schwelle
+                    </label>
+                    <input id="threshold-input" type="number" min="0" step="0.001" placeholder="auto"
+                        title="Fester Schwellwert (MSE) für die Anomalie-Erkennung. Leer = automatisch aus gelabelten Punkten kalibrieren."
+                        class="w-24 bg-white border border-slate-300 rounded-lg px-3 py-2 text-sm text-slate-800 placeholder-slate-400">
                     <button id="train-btn"
                         class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition">
                         Modell Trainieren (/train)
@@ -160,6 +172,8 @@
             selectionStatus: document.getElementById('selection-status'),
             markAnomalyBtn: document.getElementById('mark-anomaly-btn'),
             clearSelectionBtn: document.getElementById('clear-selection-btn'),
+            timestepsInput: document.getElementById('timesteps-input'),
+            thresholdInput: document.getElementById('threshold-input'),
             trainBtn: document.getElementById('train-btn'),
             infoStatus: document.getElementById('info-status'),
             generatePredictBtn: document.getElementById('generate-predict-btn'),

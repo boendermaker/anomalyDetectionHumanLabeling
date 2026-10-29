@@ -165,7 +165,7 @@ class ChartApp {
             this.anomalySeries2.strokes.template.setAll({ strokeWidth: 0 });
             this.anomalySeries2.bullets.push(function () {
                 return am5.Bullet.new(root2, {
-                    sprite: am5.Circle.new(root2, { radius: 6, fill: am5.color(0xe11d48) })
+                    sprite: am5.Circle.new(root2, { radius: 3, fill: am5.color(0xe11d48) })
                 });
             });
 
@@ -238,8 +238,14 @@ class ChartApp {
             const on = btn.dataset.seriesKey === this.activeSensorKey;
             btn.className = 'inline-flex items-center gap-1.5 px-2 py-1 rounded-md border font-medium transition ' +
                 (on
-                    ? 'bg-indigo-100 border-indigo-400 text-indigo-800 ring-1 ring-indigo-400'
-                    : 'bg-white border-slate-200 text-slate-600 hover:bg-slate-50 hover:border-slate-300');
+                    ? 'text-slate-900 ring-2'
+                    : 'bg-white text-slate-600 hover:bg-slate-50');
+            // Button-Rahmen/Ring in der Farbe der jeweiligen Ganglinie
+            const c = this.legend1Colors[btn.dataset.seriesKey] || { r: 100, g: 116, b: 139 };
+            const col = `rgb(${c.r}, ${c.g}, ${c.b})`;
+            btn.style.borderColor = col;
+            btn.style.boxShadow = on ? `0 0 0 2px ${col}` : '';
+            btn.style.backgroundColor = on ? `rgba(${c.r}, ${c.g}, ${c.b}, 0.12)` : '';
         });
         const statusEl = this.el.activeSensorStatus;
         if (statusEl) {
@@ -620,12 +626,20 @@ class ChartApp {
         });
 
         Object.keys(grouped).forEach(key => {
+            // Gleiche Farben wie die Legende/Chart 1 – sonst würde das
+            // amCharts-Theme eine eigene (andere) Palettenfarbe zuweisen.
+            let c = this.legend1Colors[key];
+            if (!c) {
+                c = { r: this.seriesColorPalette[0][0], g: this.seriesColorPalette[0][1], b: this.seriesColorPalette[0][2] };
+            }
             const s2 = this.chart2.series.push(am5xy.LineSeries.new(this.root2, {
                 name: key.replace('|', ' · '),
                 xAxis: this.xAxis2,
                 yAxis: this.yAxis2,
                 valueYField: "current",
-                valueXField: "date"
+                valueXField: "date",
+                stroke: am5.color(c.r, c.g, c.b, 255),
+                fill: am5.color(c.r, c.g, c.b, 25)
             }));
             s2.strokes.template.setAll({ strokeWidth: 1.5 });
             this.seriesMap2.set(key, s2);
@@ -677,30 +691,176 @@ class ChartApp {
             const result = await res.json();
             const predictions = result.predictions || [];
 
+            // Pro Datenpunkt die Schlimmste (höchste) MSE aller Fenster ermitteln,
+            // die diesen Punkt abdecken. So wird die Anomalie auf den tatsächlichen
+            // Datenpunkt abgebildet – unabhängig von Geräteanzahl/Fensteranzahl.
+            // Zusätzlich wird pro Kanal die höchste pro-Kanal-MSE über alle
+            // anomalen Fenster gemerkt (für die Kanal-Zuordnung des roten Markers).
+            // Kanäle und ihre Varianz (für die Normalisierung der channelMse).
+            // Muss vor der Aggregation stehen, weil die Kanal-Auswahl sie nutzt.
+            const channelKeys = ChartApp.getChannelKeys(dataset);
+            const channelVariance = {};
+            channelKeys.forEach(ch => {
+                const vals = dataset.map(pt => ChartApp.readChannelValue(pt, ch)).filter(v => v != null && isFinite(v));
+                if (vals.length < 2) return;
+                const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+                const variance = vals.reduce((s, v) => s + Math.pow(v - mean, 2), 0) / vals.length;
+                channelVariance[ch] = Math.max(variance, 1e-9);
+            });
+            // Normale channelMse = chMse / channelVariance → vergleichbarer
+            // RELATIV-Fehler über alle Kanäle hinweg.
+            const normalizeScores = (chObj) => {
+                if (!chObj) return null;
+                const norm = {};
+                Object.entries(chObj).forEach(([ch, v]) => {
+                    const variance = channelVariance[ch];
+                    if (variance && v != null) norm[ch] = v / variance;
+                });
+                return Object.keys(norm).length > 0 ? norm : null;
+            };
+
+            const pointMse = new Map();   // index -> { mse, isAnomaly, channelScores, channelMaxScores }
+            predictions.forEach(pred => {
+                const indices = Array.isArray(pred.recordIndices) ? pred.recordIndices : [];
+                // Primärsignal: baseline-normalisierte Kanal-Scores aus dem
+                // Backend (Medan-Résidual² relativ → korrekt für Spikes).
+                // Fallback: rohe channelMaxError bzw. channelMse.
+                const primary = pred.channelScores
+                    || normalizeScores(pred.channelMaxError)
+                    || normalizeScores(pred.channelMse)
+                    || null;
+                indices.forEach(i => {
+                    if (typeof i !== 'number') return;
+                    let cur = pointMse.get(i);
+                    if (!cur) {
+                        cur = { mse: 0, isAnomaly: false, channelScores: {} };
+                        pointMse.set(i, cur);
+                    }
+                    if (pred.mse > cur.mse) cur.mse = pred.mse;
+                    if (pred.isAnomaly && primary) {
+                        cur.isAnomaly = true;
+                        Object.entries(primary).forEach(([ch, score]) => {
+                            if (cur.channelScores[ch] === undefined || score > cur.channelScores[ch]) {
+                                cur.channelScores[ch] = score;
+                            }
+                        });
+                    }
+                });
+            });
+
+            // Gerätespezifische Wertestatistik pro Kanal – für den Fallback,
+            // falls channelMse aus dem Backend leer ist. Wichtig: Der Fallback
+            // MUSS nur Werte desselben Geräts vergleichen, sonst verfälschen
+            // höhere Grundwerte eines anderen Geräts (z. B. KOMP-A vs KOMP-B)
+            // die Kanal-Zuordnung.
+            const deviceChannelStats = new Map();  // device_id -> { ch: {mean, std, range} }
+            const buildDeviceStats = (deviceId) => {
+                if (deviceChannelStats.has(deviceId)) return deviceChannelStats.get(deviceId);
+                const deviceRecords = dataset.filter(r => r.device_id === deviceId);
+                const stats = {};
+                channelKeys.forEach(ch => {
+                    const vals = deviceRecords.map(r => ChartApp.readChannelValue(r, ch)).filter(v => v != null && isFinite(v));
+                    if (vals.length === 0) return;
+                    const min = Math.min(...vals), max = Math.max(...vals);
+                    const mean = vals.reduce((a, b) => a + b, 0) / vals.length;
+                    const variance = vals.reduce((s, v) => s + (v - mean) ** 2, 0) / vals.length;
+                    stats[ch] = { mean, std: Math.sqrt(variance), range: Math.max(max - min, 1e-6) };
+                });
+                deviceChannelStats.set(deviceId, stats);
+                return stats;
+            };
+
+            /**
+             * Wählt den Kanal, auf dem der rote Anomalie-Marker erscheinen soll.
+             *
+             * Strategie:
+             * 1) GELABELTE Anomalien (humanLabel === 'anomaly'):
+             *    → DATENGETRIEBEN: pro-device z-Score. Der Kanal, der bei
+             *      genau diesem Punkt relativ zur Normalverteilung dieses
+             *      Geräts am stärksten abweicht (max |v-mean|/std).
+             *      Deterministisch und objektiv – nutzt die Datenlage direkt,
+             *      nicht die modellinterne Rekonstruktionsfehler-Heuristik.
+             *
+             * 2) MODELL-ERKANNT: pred.channelScores (pro-Kanal
+             *    Max-Einzelresidual, kanal-normalisiert) → Fallback device-Stats.
+             */
+            const mostDeviantChannel = (pt, index) => {
+                const pred = pointMse.get(index);
+
+                // 1) GELABELT → Datengetrieben (pro-device z-Score)
+                const isLabeled = pt.humanLabel === 'anomaly' ||
+                    (pt.values && Object.values(pt.values).some(v => v && v.humanLabel === 'anomaly'));
+                if (isLabeled) {
+                    const stats = buildDeviceStats(pt.device_id);
+                    let best = null, bestZ = -1;
+                    for (const ch of channelKeys) {
+                        const st = stats[ch];
+                        if (!st) continue;
+                        const v = ChartApp.readChannelValue(pt, ch);
+                        if (v == null || !isFinite(v)) continue;
+                        const z = st.std > 0 ? Math.abs(v - st.mean) / st.std : 0;
+                        if (z > bestZ) { bestZ = z; best = ch; }
+                    }
+                    if (best) return best;
+                }
+
+                // 2) MODELL-ERKANNT → channelScores
+                if (pred && pred.channelScores && Object.keys(pred.channelScores).length > 0) {
+                    let best = null, bestScore = -1;
+                    for (const [ch, score] of Object.entries(pred.channelScores)) {
+                        if (score > bestScore) { bestScore = score; best = ch; }
+                    }
+                    if (best) return best;
+                }
+
+                // 3) Fallback: device-Stats (größte Abweichung, normalisiert)
+                const stats = buildDeviceStats(pt.device_id);
+                let best = null, bestDev = -1;
+                for (const ch of channelKeys) {
+                    const st = stats[ch];
+                    if (!st) continue;
+                    const v = ChartApp.readChannelValue(pt, ch);
+                    if (v == null || !isFinite(v)) continue;
+                    const dev = st.std > 0 ? Math.abs(v - st.mean) / st.std : 0;
+                    if (dev > bestDev) { bestDev = dev; best = ch; }
+                }
+                return best;
+            };
+
             const formattedData = dataset.map((pt, index) => {
-                const pred = predictions[index] || {};
-                // Punktwert für die Chart-Anzeige: "current" wenn vorhanden,
-                // sonst der erste numerische Kanal aus values
-                let pointValue = ChartApp.readChannelValue(pt, 'current');
-                if (pointValue == null && pt.values) {
-                    for (const k of Object.keys(pt.values)) {
+                // Nur das Modell entscheidet: rot = MSE > Schwellwert.
+                // Manuelle Labels aus dem oberen Chart werden NICHT
+                // zwangsweise rot markiert.
+                const pred = pointMse.get(index) || {};
+                const isAnomaly = !!pred.isAnomaly;
+
+                // Kanal mit dem höchsten Rekonstruktionsfehler (channelMse aus
+                // dem Backend) → der rote Punkt liegt auf dieser Ganglinie.
+                const devChannel = mostDeviantChannel(pt, index);
+                let pointValue = devChannel != null ? ChartApp.readChannelValue(pt, devChannel) : null;
+                if (pointValue == null) {
+                    let best = -Infinity;
+                    for (const k of channelKeys) {
                         const v = ChartApp.readChannelValue(pt, k);
-                        if (v != null && isFinite(v)) { pointValue = v; break; }
+                        if (v != null && isFinite(v) && v > best) { best = v; pointValue = v; }
                     }
                 }
+
+                const anomalyValue = isAnomaly ? pointValue : null;
+
                 return {
                     ...pt,
                     current: pointValue,
                     date: new Date(pt.timestamp).getTime(),
                     mse: pred.mse ? pred.mse.toFixed(4) : "0",
-                    anomalyValue: pred.isAnomaly ? pointValue : null
+                    anomalyValue
                 };
             });
 
             this.updateChart2Series(dataset);
             this.anomalySeries2.data.setAll(formattedData.filter(pt => pt.anomalyValue !== null));
 
-            const anomalyCount = predictions.filter(p => p.isAnomaly).length;
+            const anomalyCount = formattedData.filter(pt => pt.anomalyValue !== null).length;
             this.el.predictStatus.innerText = `Analyse abgeschlossen: ${anomalyCount} Anomalien erkannt.`;
         } catch (err) {
             console.error("Fehler bei Vorhersage:", err);
@@ -761,10 +921,20 @@ class ChartApp {
             // Trainings-Regel (User-Vertrag):
             //  - selection EMPTY  -> train on ALL historical data (minus human-labeled anomalies)
             //  - selection NON-EMPTY -> train ONLY on those selected indices
+            const timeStepsValue = parseInt(this.el.timestepsInput?.value, 10);
+            const thresholdValue = parseFloat(this.el.thresholdInput?.value);
             const payload = {
                 data: this.rawData,
                 selectedIndices: [...this.selectedIndices.keys()]
             };
+            if (Number.isInteger(timeStepsValue) && timeStepsValue >= 2) {
+                payload.timeSteps = timeStepsValue;
+            }
+            // Fester Schwellwert nur senden, wenn der User einen angegeben
+            // hat – sonst Auto-Kalibrierung auf dem Server.
+            if (isFinite(thresholdValue) && thresholdValue > 0) {
+                payload.anomalyThreshold = thresholdValue;
+            }
             const res = await fetch('/train', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -772,8 +942,11 @@ class ChartApp {
             });
             const result = await res.json();
             alert(result.message || "Training abgeschlossen!");
+            const thresholdMode = result.thresholdFixed
+                ? 'Schwelle: ' + (result.anomalyThreshold ?? '?') + ' (fixiert)'
+                : 'Schwelle: ' + (result.anomalyThreshold ?? '?') + (result.thresholdCalibrated ? ' (kalibriert)' : ' (Standard)');
             this.el.infoStatus.innerText =
-                `Modell erfolgreich trainiert (${result.trainingRecords ?? '?'} Trainingspunkte, Modus: ${result.trainingMode ?? '?'})`;
+                `Modell erfolgreich trainiert (${result.normalRecords ?? '?'} Normal-Records, ${result.labeledAnomalyRecords ?? 0} gelabelte Anomalien, Fensterlänge: ${result.timeSteps ?? '?'}, ${thresholdMode})`;
         } catch (err) {
             alert("Fehler beim Training.");
         }
@@ -844,11 +1017,18 @@ class ChartApp {
         this.rawData = [];
         this.testData = [];
         this.selectedIndices.clear();
+        this.clearAxisRanges();
         this.updateSelectionUI();
 
         this.seriesMap1.forEach(s => s.data.setAll([]));
         this.seriesMap2.forEach(s => s.data.setAll([]));
         this.anomalySeries2.data.setAll([]);
+        // Anomalie-/Auswahl-Marker des oberen Charts vollständig aus dem
+        // Chart entfernen (NUR Daten leeren lässt Bullets sichtbar stehen)
+        this.markerSeriesMap1.forEach(s => {
+            if (this.chart1) this.chart1.series.removeValue(s);
+        });
+        this.markerSeriesMap1.clear();
 
         this.el.infoStatus.innerText = "Speicher zurückgesetzt.";
         this.el.predictStatus.innerText = "Warte auf Vorhersage-Start...";

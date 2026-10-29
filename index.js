@@ -59,8 +59,24 @@ app.post('/generate-test-data', (req, res) => {
         const totalSteps = req.body.totalSteps || 200;
         const devices = req.body.devices || ['sensor-01', 'sensor-02', 'sensor-03'];
 
-        const generatedData = DataGenerator.generateWithLongAnomalies(totalSteps, devices);
+        // Bevorzugt: Referenzdaten (hochgeladene JSON) – Abweichungen
+        // orientieren sich an den echten Kanälen und Wertebereichen.
+        // Fallback: synthetische Testdaten mit eingebetteten Anomalien.
+        let generatedData;
+        if (Array.isArray(trainer.rawData) && trainer.rawData.length > 0) {
+            const anomalyBursts = req.body.anomalyBursts || 3;
+            const burstLength = req.body.burstLength || 10;
+            generatedData = DataGenerator.generateWithAnomaliesFromReference(
+                trainer.rawData, totalSteps, anomalyBursts, burstLength
+            );
+            res.json({
+                message: `${generatedData.length} Testdatenpunkte aus den hochgeladenen Referenzdaten mit ${anomalyBursts} Abweichungsblöcken generiert.`,
+                data: generatedData
+            });
+            return;
+        }
 
+        generatedData = DataGenerator.generateWithLongAnomalies(totalSteps, devices);
         res.json({
             message: `${generatedData.length} Testdatenpunkte mit zusammenhängenden Anomalien generiert.`,
             data: generatedData
@@ -94,7 +110,23 @@ app.post('/train', async (req, res) => {
             trainer.rawData = data;
         }
 
+        // Fensterlänge (timeSteps) optional aus der Anfrage konfigurierbar:
+        // Positiver Integer >= 2, sonst zurück auf den Standardwert.
+        const requestedTimeSteps = req.body?.timeSteps;
+        trainer.timeSteps = (Number.isInteger(requestedTimeSteps) && requestedTimeSteps >= 2)
+            ? requestedTimeSteps
+            : 10;
+
+        // Anomalie-Schwelle optional aus der Anfrage konfigurierbar:
+        //  - positive Zahl -> fester Schwellwert (Auto-Kalibrierung übersprungen)
+        //  - 0 / weggelassen -> Auto-Kalibrierung (Standard)
+        const requestedThreshold = parseFloat(req.body?.anomalyThreshold);
+        trainer.fixedAnomalyThreshold = (isFinite(requestedThreshold) && requestedThreshold > 0)
+            ? requestedThreshold
+            : 0;
+
         console.log('Starte Modell-Training...');
+        console.log(`  Fensterlänge (timeSteps): ${trainer.timeSteps}`);
         console.log(`  Trainingsmodus: ${selectedIndices.length > 0 ? 'nur ausgewählte Punkte (' + selectedIndices.length + ')' : 'alle historischen Daten'}`);
         const summary = await trainer.train(data, selectedIndices);
 

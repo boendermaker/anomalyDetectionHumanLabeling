@@ -1,0 +1,6602 @@
+[
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.3,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.54,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.83,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.49,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.87,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.44,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.67,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.81,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.17,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.6,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.66,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.06,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.76,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.88,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.23,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.68,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.89,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.84,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.02,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1490,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.75,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.71,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.97,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.33,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.63,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.47,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.95,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1469,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.9,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.77,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.88,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1472,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 9.24,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.8,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.24,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.37,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.1,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.43,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.75,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 52.75,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.66,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.65,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1493,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.47,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.27,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.84,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.55,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.17,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.77,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.08,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.72,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1471,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 52.91,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.16,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.71,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1471,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.59,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.29,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.76,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.52,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.25,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.82,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.04,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.51,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.63,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-01T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.71,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.23,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.75,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.98,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.18,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.77,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.52,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.45,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.76,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.14,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.51,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.88,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.35,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.8,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.98,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.39,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.76,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.83,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.56,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.75,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.97,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.09,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.77,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.37,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.97,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.88,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.89,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.81,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.83,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.05,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.7,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.52,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.75,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.57,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.46,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.87,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.26,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.57,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.69,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.5,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.51,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.19,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.33,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.83,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 52.92,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.13,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.67,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.54,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.17,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.76,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.55,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.07,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.73,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.39,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.13,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.61,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.36,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.1,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.74,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.11,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.39,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.82,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.77,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.19,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.88,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-02T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.2,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.69,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.92,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.42,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.87,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.56,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.78,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.68,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.69,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.93,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.9,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.85,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.17,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.66,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.82,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.19,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.7,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.87,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.27,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.55,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.47,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.91,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.03,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.82,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.29,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.56,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.44,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.75,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.85,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.4,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.69,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.72,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.05,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.54,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.82,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.02,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.5,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.74,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.56,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.39,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.7,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.36,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.25,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.68,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.33,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.36,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.67,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 52.89,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.11,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.7,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.12,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.08,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.62,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.94,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.38,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.67,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.83,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.33,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.78,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.92,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.25,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.7,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.5,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.4,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.63,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-03T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.23,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.77,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.78,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.99,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.71,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.84,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.63,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.48,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.81,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.45,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.9,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 9.04,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.93,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.53,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.71,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.65,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.83,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.42,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.76,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.93,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1487,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.81,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.85,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.74,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.94,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.81,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.82,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.95,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.68,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.48,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.43,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.8,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.25,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.44,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.78,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.4,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.75,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.72,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.51,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.85,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.56,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.75,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.4,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.27,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.7,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.69,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.32,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.71,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.4,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.18,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.69,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.31,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.22,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.77,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.45,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.2,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.23,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.85,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.76,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.07,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.86,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-04T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.55,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.11,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.84,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.52,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.38,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.73,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.46,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.89,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.42,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.63,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.9,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.69,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.94,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.53,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.76,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.96,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.85,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.64,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.01,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.32,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.82,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.9,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.68,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.84,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.17,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.76,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.95,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.02,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.91,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.94,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.85,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.63,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1487,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.9,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.34,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.9,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.4,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.5,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.68,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.42,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.8,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.52,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.59,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.81,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.55,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.33,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.76,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1471,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.38,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.8,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.2,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.81,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.73,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.7,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.3,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.54,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.14,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 9.13,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.69,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1495,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 52.97,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.32,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.62,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 53.58,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.39,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.69,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.11,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.3,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.78,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-05T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.92,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.49,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.77,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.17,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.39,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.55,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.84,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.76,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.08,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.69,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.83,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.72,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.74,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.72,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.97,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.48,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.63,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.07,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.45,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.94,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.93,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.72,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 9.12,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.15,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.29,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.81,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.11,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.38,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.79,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.04,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.11,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.9,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.79,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.09,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.16,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.37,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.97,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.21,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.14,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.99,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.03,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.39,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.14,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.73,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.34,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 1.81,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.37,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.27,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.07,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.08,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.01,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1471,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.81,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.35,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.11,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 54.36,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 7.98,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.07,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.59,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.24,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1472,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.35,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.27,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.02,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.74,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.21,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.09,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-06T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.56,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.33,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.75,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.46,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.32,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.35,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.77,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.31,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.56,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.54,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.3,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.08,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.64,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.33,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.36,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.83,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.51,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.4,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.74,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.48,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.84,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.62,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.03,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.88,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.61,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.39,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.89,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.49,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.07,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.7,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.63,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.74,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.81,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.36,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.96,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.57,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.51,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.97,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.41,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.45,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.41,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.78,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.24,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.62,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 55.87,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.32,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.51,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.31,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.07,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.6,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.86,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.31,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.64,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.39,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.28,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.71,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.52,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.42,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.6,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.27,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.11,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.72,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 56.91,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.28,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.79,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.65,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.39,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.78,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-07T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.5,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.22,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.76,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.83,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.45,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.77,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.69,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.57,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.6,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.48,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.73,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.08,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.48,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.74,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.78,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.07,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.62,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.85,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.88,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.9,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.7,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.06,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.14,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.9,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.01,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.08,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.12,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.02,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.75,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.1,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.07,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.58,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.01,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.33,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.48,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.06,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.71,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.6,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.01,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.19,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.32,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.03,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.74,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.35,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.11,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.59,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.18,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.99,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.79,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.27,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.05,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.61,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 7.99,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 2.91,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.18,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 7.91,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.05,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.15,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.35,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.24,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 57.42,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.4,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.05,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.17,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.24,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.29,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.51,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.44,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.43,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-08T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.81,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.41,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.25,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.85,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.61,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.22,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.14,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.62,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.22,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.01,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.55,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.36,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.21,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.87,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.61,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.75,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.83,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.44,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.77,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.74,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.5,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.3,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.82,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.5,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.39,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.76,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.41,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.4,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.64,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.57,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.19,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.63,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.46,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.94,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.39,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.2,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.56,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.49,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.69,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.57,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.58,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.39,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.46,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.47,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.2,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.25,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.82,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.08,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.19,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.68,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.01,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.17,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.35,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.26,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.08,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.71,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 58.93,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 7.58,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.28,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1469,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.88,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.16,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.49,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1470,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.88,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.64,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.57,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.94,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.5,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.55,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 59.91,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.59,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.73,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1489,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-09T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.49,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.74,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1495,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.78,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.56,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.93,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.87,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.78,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.92,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.74,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.92,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.78,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.95,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.97,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.24,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 9.01,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.07,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.78,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 9.05,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.95,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.06,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.64,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.08,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.33,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.65,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.29,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.34,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.72,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.09,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1486,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.37,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.49,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.15,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.41,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.71,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.16,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.51,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.67,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.03,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.15,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.25,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.99,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.48,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.04,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.96,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.41,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.87,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.07,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.25,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.36,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.43,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.05,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.31,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 3.92,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1472,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.91,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.14,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.02,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.51,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.07,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.05,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 60.91,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.24,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4,
+        "humanLabel": "normal"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.57,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.14,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.08,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.53,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.15,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.22,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-10T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 62.28,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.44,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.2,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 61.9,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.53,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.26,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.06,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.69,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.47,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.45,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.73,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.45,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.48,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.99,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.51,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.55,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.95,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.57,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1488,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 63.84,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.81,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.38,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 64.37,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.7,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.63,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 64.7,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.95,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.45,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 64.64,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.74,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.5,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 64.45,
+        "humanLabel": "normal"
+      },
+      "motor_current_a": {
+        "value": 8.81,
+        "humanLabel": "normal"
+      },
+      "vibration_mm_s": {
+        "value": 4.53,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 86.33,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 46.32,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 13.21,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 75.89,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 47.55,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 10.99,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 76.44,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 46.55,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 11.4,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 74.99,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 46.73,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 10.11,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.62,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.54,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.94,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.78,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.81,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.67,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.58,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.28,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.75,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.96,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.11,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.63,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.76,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.76,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.85,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.02,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.08,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.43,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1472,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.42,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.29,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.89,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1469,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.5,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.5,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.1,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.56,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.77,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.55,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1476,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-11T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.97,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.68,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.69,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.79,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.59,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.59,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.09,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.98,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.67,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.03,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.68,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.09,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.38,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.29,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.84,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1485,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.14,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.26,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.76,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.96,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.03,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.32,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.39,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.02,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.89,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.28,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.73,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.72,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.96,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.73,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.8,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1488,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.49,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 32.29,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.71,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1488,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.22,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.89,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.09,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.88,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.73,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.49,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T12:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.28,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.01,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.82,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T13:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.86,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.48,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.01,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T14:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.93,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.63,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.85,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T15:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.6,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.45,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.61,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T16:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 66.73,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.09,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.79,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1474,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T17:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.21,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.26,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.63,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T18:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.02,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.3,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.65,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T19:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.28,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.32,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.55,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1475,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T20:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.57,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.88,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.73,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T21:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.77,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.56,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.58,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T22:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.18,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.28,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.93,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1473,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-12T23:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 67.7,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.91,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.07,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1477,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T00:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.82,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.97,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.66,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T01:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.85,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.55,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.82,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1478,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T02:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.9,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 29.59,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.76,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T03:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.64,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.92,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.02,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1482,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T04:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.9,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.06,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.88,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1480,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T05:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 68.9,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.94,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.66,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T06:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.38,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.55,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.95,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T07:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.34,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.51,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.72,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T08:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.44,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.43,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.79,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1483,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T09:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.16,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.69,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.7,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1484,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T10:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 69.58,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 30.1,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 7.07,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1481,
+        "humanLabel": "normal"
+      }
+    }
+  },
+  {
+    "device_id": "MOTOR-01",
+    "timestamp": "2026-11-13T11:00:00.000Z",
+    "values": {
+      "bearing_temp_c": {
+        "value": 70.35,
+        "humanLabel": "anomaly"
+      },
+      "motor_current_a": {
+        "value": 31.79,
+        "humanLabel": "anomaly"
+      },
+      "vibration_mm_s": {
+        "value": 6.87,
+        "humanLabel": "anomaly"
+      },
+      "rpm": {
+        "value": 1479,
+        "humanLabel": "normal"
+      }
+    }
+  }
+]

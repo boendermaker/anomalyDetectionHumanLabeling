@@ -5285,15 +5285,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 58.79,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 13.53,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 6.97,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1446,
@@ -5329,15 +5329,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 71.74,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.4,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.91,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1455,
@@ -5373,15 +5373,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 71.44,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 15.13,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 12.07,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1456,
@@ -5417,15 +5417,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 72.52,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 15.08,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.85,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1457,
@@ -5461,15 +5461,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 72.81,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 15.29,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.66,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1465,
@@ -5505,15 +5505,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 73.25,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 15.77,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 12,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1462,
@@ -5549,15 +5549,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 73.68,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 15.42,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 12.14,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1466,
@@ -5593,15 +5593,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 73.98,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 15.39,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 12.06,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1457,
@@ -5637,15 +5637,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 72.83,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.92,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 12.06,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1458,
@@ -5681,15 +5681,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 72.87,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.92,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 12.11,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1453,
@@ -5725,15 +5725,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 72.56,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.9,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.78,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1453,
@@ -5769,15 +5769,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 69.91,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.83,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.86,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1452,
@@ -5813,15 +5813,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 70.69,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.67,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.61,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1449,
@@ -5857,15 +5857,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 68.92,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.1,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.55,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1446,
@@ -5901,15 +5901,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 68.53,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.45,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.45,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1440,
@@ -5945,15 +5945,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 67.86,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 13.7,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.74,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1443,
@@ -5989,15 +5989,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 66.89,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.02,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.47,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1438,
@@ -6033,15 +6033,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 66.31,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 13.49,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.51,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1443,
@@ -6077,15 +6077,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 67.71,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.11,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.53,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1441,
@@ -6121,15 +6121,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 67.14,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 13.71,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.34,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1434,
@@ -6165,15 +6165,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 66.59,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 13.97,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.39,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1441,
@@ -6209,15 +6209,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 67.75,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.06,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.36,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1440,
@@ -6253,15 +6253,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 68.53,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.02,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.58,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1443,
@@ -6297,15 +6297,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 69.54,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.37,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.62,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1446,
@@ -6341,15 +6341,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 70.01,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 14.47,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 11.68,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1452,
@@ -6385,15 +6385,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 59.74,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 13.73,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 7.01,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1453,
@@ -8827,15 +8827,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 57.89,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 18.34,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.06,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1415,
@@ -8871,15 +8871,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 64.2,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 22.43,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.54,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1406,
@@ -8915,15 +8915,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 64.02,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.84,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.36,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1405,
@@ -8959,15 +8959,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 62.83,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.7,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.94,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1400,
@@ -9003,15 +9003,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 61.72,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.86,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.29,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1394,
@@ -9047,15 +9047,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 60.23,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.86,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.8,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1400,
@@ -9091,15 +9091,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 59.52,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.64,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.19,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1389,
@@ -9135,15 +9135,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 59.21,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.28,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.01,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1393,
@@ -9179,15 +9179,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 59.82,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.88,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.66,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1394,
@@ -9223,15 +9223,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 58.77,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.72,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.7,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1385,
@@ -9267,15 +9267,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 59.3,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.77,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.02,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1388,
@@ -9311,15 +9311,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 58.51,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.68,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.85,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1394,
@@ -9355,15 +9355,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 58.89,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.78,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.86,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1394,
@@ -9399,15 +9399,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 58.8,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.98,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.93,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1388,
@@ -9443,15 +9443,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 59.96,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 20.76,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.04,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1390,
@@ -9487,15 +9487,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 60.51,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.46,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.11,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1392,
@@ -9531,15 +9531,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 62.24,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.31,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.3,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1399,
@@ -9575,15 +9575,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 62.61,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.57,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.36,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1405,
@@ -9619,15 +9619,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 62.91,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 21.68,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.42,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1418,
@@ -9663,15 +9663,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 63.81,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 22.22,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 5.42,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1402,
@@ -9707,15 +9707,15 @@
     "values": {
       "bearing_temp_c": {
         "value": 57.26,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "motor_current_a": {
         "value": 18.09,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "vibration_mm_s": {
         "value": 4.03,
-        "humanLabel": "anomaly"
+        "humanLabel": "normal"
       },
       "rpm": {
         "value": 1413,
