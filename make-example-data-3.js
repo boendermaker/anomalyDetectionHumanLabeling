@@ -1,12 +1,14 @@
 /**
  * Dritter Beispieldatensatz: Ein Motor (MOTOR-01) mit realistischem Betriebsszenario:
  *
- *   1. ANLAUFSTROM:   3x motorische Anläufe (h=10, 110, 210) mit klassischem
- *                     Einschaltstrom-Spike (ca. 6,5x Nennstrom, über 4 Schritte
- *                     abklingend) + Temperatur-Nachlauf. Das ist NORMALER
- *                     Betrieb – die Labels stehen bewusst auf 'normal', damit
- *                     das Autoencoder den Anlauf als legitimes Muster lernt
- *                     und ihn bei der Erkennung NICHT als Anomalie meldet.
+ *   1. ANLAUFSTROM:   3x motorische Anläufe (h=10, 110, 210) mit flachem
+ *                     Anzug über 6 Stunden. Die Werte bleiben INNERHALB der
+ *                     normalen Bandbreite (max ~8,8 A) – ein mildes Transient,
+ *                     das deutlich unter den anomalen Strömen bleibt. Das ist
+ *                     NORMALER Betrieb – die Labels stehen bewusst auf
+ *                     'normal', damit der Autoencoder den Anlauf als legitimes
+ *                     Muster lernt und ihn bei der Erkennung NICHT als
+ *                     Anomalie meldet (0 False Positives am Anlaufstrom).
  *
  *   2. KUGELLAGER-DEGRADATION (langsam anbahnend): ab h=120 steigt die
  *                     Vibration langsam und stetig an (1,8 → ~4,5 mm/s),
@@ -16,12 +18,12 @@
  *                     Vibration > 4,0 mm/s) sind als 'anomaly' gelabelt.
  *
  *   3. PLÖTZLICHE LAST (festes Kugellager, h=250-253): plötzlicher
- *                     Stromanstieg (+18 A), Temperatur-Spike (+15 °C),
- *                     Vibrationsschlag (+6 mm/s) – alles 'anomaly'.
+ *                     Stromanstieg (+38 A), Temperatur-Spike (+22 °C),
+ *                     Vibrationsschlag (+9 mm/s) – alles 'anomaly'.
  *
  *   4. ANHALTENDE HOHE LAST (h=254-299): das Lager bleibt fest, Motor läuft
- *                     dauerhaft mit erhöhtem Strom (+6 A), Temperatur (+10 °C)
- *                     und Vibration (+3 mm/s) – als 'anomaly' gelabelt.
+ *                     dauerhaft mit erhöhtem Strom (+22 A), Temperatur (+14 °C)
+ *                     und Vibration (+5 mm/s) – als 'anomaly' gelabelt.
  *
  * Kanäle (identisch zu den anderen Datensätzen):
  *   bearing_temp_c, motor_current_a, vibration_mm_s, rpm
@@ -72,9 +74,10 @@ function normalBaseline(hour) {
 }
 
 // --- 1) Anlaufstrom (normaler Betrieb) ------------------------------------
-// 3 Anläufe: kurzer Einschaltstrom-Spike (2 Schritte) auf ~19 A. Der
-// Anlaufstrom ist ein kurzes, mildes Transient und bleibt deutlich unter
-// den anomalen Strömen (Seizure/Sustained), damit er klar 'normal' bleibt.
+// 3 Anläufe: flacher Anzug über 6 Stunden. Der Anlaufstrom ist ein kurzes,
+// mildes Transient innerhalb der normalen Bandbreite (max ~8,8 A) und bleibt
+// deutlich unter den anomalen Strömen (Seizure/Sustained), damit er klar
+// 'normal' bleibt.
 const STARTUPS = [10, 110, 210];
 // Anlauf: sehr flacher Anzug über 6 Stunden – die Werte bleiben INNERHALB
 // der normalen Bandbreite (max ~8.8 A), damit der Autoencoder sie als
@@ -132,8 +135,8 @@ function applySeizure(values, hour, labels) {
 }
 
 // --- 4) Anhaltend erhöhte Last nach dem Festlaufen (ab h=254) -------------
-// Das feste Lager bleibt dauerhaft am Widerstand → anhaltend hoher Strom,
-// der klar über dem Anlaufstrom (19 A) liegt.
+// Das feste Lager bleibt dauerhaft im Widerstand → anhaltend hoher Strom
+// (+22 A), der klar über dem Anlaufstrom (max ~8.8 A) und dem normalen Band liegt.
 function applySustained(values, hour, labels) {
     if (hour > SEIZURE.to) {
         values.motor_current_a = round2(values.motor_current_a + 22 * (1 + 0.04 * gauss()));
@@ -185,7 +188,7 @@ console.log(`  Aufzeichnungen:    ${records.length}`);
 console.log(`  mit Anomalie (min. 1 Kanal):     ${nAnom}`);
 console.log(`  Kanal-Labels 'anomaly' gesamt:   ${nAnomLabels}`);
 console.log(`  Szenario:`);
-console.log(`    - Anlaufstrom (normal):      h=${STARTUPS.join(', ')} (Einschaltstrom bis ~${Math.round(NOMINAL.current * 6.5)} A)`);
+console.log(`    - Anlaufstrom (normal):      h=${STARTUPS.join(', ')} (flacher Anzug, max ~8,8 A im Normalband)`);
 console.log(`    - Kugellager-Degradation:    h=${DEGRAD_FROM}-${DEGRAD_END} (Vibration ${NOMINAL.vib} → ~${round2(NOMINAL.vib + 2.7)} mm/s, Temp +8 °C)`);
-console.log(`    - Plötzliche Last (festes Lager): h=${SEIZURE.from}-${SEIZURE.to} (Strom +18 A, Temp +15 °C, Vibration +6 mm/s)`);
-console.log(`    - Anhaltend erhöhte Last:    h=${SEIZURE.to + 1}-299 (Strom +6 A, Temp +10 °C, Vibration +3 mm/s)`);
+console.log(`    - Plötzliche Last (festes Lager): h=${SEIZURE.from}-${SEIZURE.to} (Strom +38 A, Temp +22 °C, Vibration +9 mm/s)`);
+console.log(`    - Anhaltend erhöhte Last:    h=${SEIZURE.to + 1}-299 (Strom +22 A, Temp +14 °C, Vibration +5 mm/s)`);

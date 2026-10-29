@@ -83,8 +83,13 @@ Dashboard im Browser öffnen: **http://localhost:3000**
 Neue Demodaten erzeugen (optional):
 
 ```bash
-node make-example-data.js   # schreibt example-iot-data.json im verschachtelten Format
+node make-example-data.js     # schreibt example-iot-data.json    (Data 1)
+node make-example-data-2.js   # schreibt example-iot-data-2.json  (Data 2)
+node make-example-data-3.js   # schreibt example-iot-data-3.json  (Data 3)
 ```
+
+> **Demo-Datensätze:** Es gibt drei vorbereitete Datensätze mit unterschiedlichen Szenarien —
+> Details in [`docs/demo-data.md`](docs/demo-data.md).
 
 ---
 
@@ -142,15 +147,26 @@ Der Status meldet z. B. `Modell erfolgreich trainiert (553 Trainingspunkte, Modu
 
 * **Frontend:** HTML5, CSS3, JavaScript (ES-Modules/Async-Await), **amCharts 5** (`am5`, `am5xy`, `Animated` Theme) mit nativer `selectX`-Cursor-Bereichsauswahl.
 * **Backend:** Node.js, Express.js (Stateless-API; Daten und Labels leben in der Browser-Session bzw. im JSON).
-* **Machine Learning:** **TensorFlow.js (`tfjs-node`)** — LSTM-Autoencoder mit Multi-Head-Rekonstruktion (ein Decoder-Kopf pro Kanal), `timeSteps = 10`, `anomalyThreshold = 0.03`, `epochs = 30`, `batchSize = 32`.
+* **Machine Learning:** **TensorFlow.js (`tfjs-node`)** — LSTM-Autoencoder mit Multi-Head-Rekonstruktion (ein Decoder-Kopf pro Kanal), `timeSteps = 10`, `anomalyThreshold` **auto-kalibriert** (siehe „Anomalie-Schwelle"), `epochs = 60`, `batchSize = 32`.
 * **Modelldatei:** persistiert unter `./model` (wird nach jedem Training neu geschrieben).
+
+### Anomalie-Schwelle (konfigurierbar)
+
+Die Erkennungsschwelle (Rekonstruktions-MSE) ist **konfigurierbar**:
+
+* **Auto-Kalibrierung (Standard):** Bei jedem Training kalibriert der Trainer die Schwelle automatisch aus den Rekonstruktionsfehlern (`calibrateAnomalyThreshold`). Bei gelabelten Anomalien wird die Schwelle als **arithmetisches Mittel** zwischen dem höchsten Normal-MSE und dem kleinsten Anomalie-MSE gesetzt — so werden alle gelabelten Anomalien klar erkannt und normale Fenster (inkl. seltener Übergänge wie Motor-Anlauf) bleiben als Normal erkannt. Ohne Labels: 99. Perzentil der Normal-MSE × 1,05.
+* **Manuelle Schwelle:** Im UI lässt sich ein fester Schwellwert eintragen (Feld **`Anomalie-Schwelle`**). Ist ein Wert gesetzt, wird die Auto-Kalibrierung übersprungen — nützlich, um die Erkennung aggressiver (niedriger) oder toleranter (höher) zu steuern.
 
 ### Projektstruktur (relevant)
 
 | Datei | Zweck |
 | :--- | :--- |
 | `index.js` | Express-Server und API-Endpunkte. |
-| `trainer.class.js` | Autoencoder, Dual-Format-Parser, `buildTimelines`, Trainings-/Predict-Logik. |
+| `trainer.class.js` | Autoencoder, Dual-Format-Parser, `buildTimelines`, Kalibrierung, Trainings-/Predict-Logik. |
 | `public/index.html` | Dashboard: Upload, Legende, Bereichsauswahl, Markierung, Training, Predict. |
+| `public/charts.class.js` | ChartApp-Klasse (DOM-unabhängig): amCharts-5-Charts, Legende, Markierung, Tooltip. |
 | `make-example-data.js` | Erzeugt `example-iot-data.json` (verschachteltes pro-Measure-Format). |
+| `make-example-data-2.js` | Erzeugt `example-iot-data-2.json` (getrennte Ganglinien + markierbare Ausreißer). |
+| `make-example-data-3.js` | Erzeugt `example-iot-data-3.json` (Motor-Anlauf + langsam anbahnender Kugellagerschaden). |
+| `docs/demo-data.md` | Beschreibung der drei Demodatensätze und ihrer eingebetteten Szenarien. |
 | `docs/pro-sensor-bereichsauswahl.md` | Re-Implementierungs-Dokumentation für die pro-Sensor-Bereichsauswahl. |
