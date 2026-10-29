@@ -21,9 +21,10 @@ Ein interaktives Web-Dashboard zur visuellen Inspektion, Klassifizierung und KI-
   * **Mehrere Kanäle in unterschiedlichen Zeitfenstern** unabhängig kombinierbar (z. B. `bearing_temp_c` 1–2 Uhr bei KOMP-A und `motor_current_a` 3–5 Uhr bei KOMP-B).
   * **`Als Anomalie markieren`** schreibt `humanLabel: 'anomaly'` **nur für den aktiven Kanal** der gewählten Punkte.
 * **Autoencoder-Training (zwei Modi):**
-  * **Modus `all`:** leere Auswahl → Training auf der gesamten Datenbasis, wobei alle manuell als Anomalie gelabelten Sequenzen ausgeschlossen werden.
+  * **Modus `all`:** leere Auswahl → Training auf der gesamten Datenbasis.
   * **Modus `selected`:** nicht leere Auswahl → Training ausschließlich auf den ausgewählten Punkten (nur der jeweilige Kanal).
   * Sequenzen unterhalb der Schrittlänge (`timeSteps`) bleiben automatisch erhalten — es wird nur die Basis gefiltert.
+  * **Rolle der Markierungen:** Punkte mit `humanLabel: 'anomaly'` werden **nie als „normal" an den Autoencoder gezeigt** — sie sind aus dem Fitting ausgeschlossen. Sie fließen aber weiterhin in die **Normalisierung** (Min/Max pro Kanal) und die **Schwellen-Kalibrierung** ein, sodass deren Abweichung im Modellraum sichtbar bleibt.
 * **Live Inferenz & Rekonstruktionsanalyse:**
   * `Anomalien Prüfen (/predict)` bewertet die geladenen Daten mit dem trainierten Modell.
   * Erkannte Abweichungen werden im unteren Chart als größere Punkte dargestellt; der Tooltip zeigt Rekonstruktionsfehler (`reconstructionError`) und Status pro Kanal.
