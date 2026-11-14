@@ -152,6 +152,12 @@ app.get('/stats', (req, res) => {
     });
 });
 
+// Verfügbarekeit eines trainierten Modells im model-Ordner anzeigen.
+// Beide Predict-Buttons starten immer erst, wenn hier true zurückkommt.
+app.get('/model/status', (req, res) => {
+    res.json({ available: trainer.hasTrainedModel() });
+});
+
 app.post('/predict', async (req, res) => {
     try {
         const inputData = req.body;

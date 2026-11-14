@@ -498,6 +498,25 @@ export class ModelTrainer {
         console.log(`Modell + Normalisierungsstatistik gespeichert unter: ${this.modelPath}`);
     }
 
+    /**
+     * True, wenn unter this.modelPath ein gültig trainiertes Modell liegt –
+     * d. h. das Lade-Paar model.json + weights.bin existiert und nicht leer ist.
+     * Der Frontend-Start der Prediction wird an diesen Ordnerzustand gekoppelt,
+     * damit beide Predict-Buttons immer erst dann starten, wenn ein Modell da ist.
+     */
+    hasTrainedModel() {
+        const modelJsonPath = path.join(this.modelPath, 'model.json');
+        const weightsPath = path.join(this.modelPath, 'weights.bin');
+        try {
+            const modelStat = fs.statSync(modelJsonPath);
+            const weightsStat = fs.statSync(weightsPath);
+            return modelStat.isFile() && modelStat.size > 0 &&
+                weightsStat.isFile() && weightsStat.size > 0;
+        } catch {
+            return false;
+        }
+    }
+
     async loadModel() {
         try {
             this.model = await tf.loadLayersModel(this.fileIOHandler()).catch((error) => {

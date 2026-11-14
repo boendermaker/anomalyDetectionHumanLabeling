@@ -42,6 +42,11 @@ class ChartApp {
         // Daten
         this.rawData = [];
         this.testData = [];
+
+        // Modell-Verfügbarkeit: true, wenn im model-Ordner ein trainiertes
+        // Modell liegt (via GET /model/status). Beide Predict-Buttons starten
+        // immer erst, wenn dieser Wert true ist.
+        this.modelAvailable = false;
         this.selectedIndices = new Map(); // Map: recordIndex -> channel (pro-Measure-Auswahl)
         this.activeSensorKey = null; // "device|channel" der Serie, für die die Bereichsauswahl gilt
 
@@ -188,6 +193,7 @@ class ChartApp {
             }));
 
             this.fetchData();
+            this.refreshModelStatus();
         });
     }
 
@@ -685,6 +691,28 @@ class ChartApp {
         }
     }
 
+    // Fragt den Server ab, ob im model-Ordner ein trainiertes Modell liegt.
+    // Beide Predict-Buttons starten immer erst, wenn modelAvailable true ist.
+    async refreshModelStatus() {
+        try {
+            const res = await fetch('/model/status');
+            const result = await res.json();
+            this.modelAvailable = !!result.available;
+        } catch (err) {
+            console.error("Fehler beim Abrufen des Modell-Status:", err);
+            this.modelAvailable = false;
+        }
+    }
+
+    // Lässt die Prediction nur zu, wenn tatsächlich ein trainiertes Modell im
+    // model-Ordner vorhanden ist – sonst klare Meldung statt leerem Fehler.
+    ensureModelAvailable() {
+        if (this.modelAvailable) return true;
+        alert("Kein trainiertes Modell im Ordner 'model' vorhanden. Bitte zuerst ein Modell trainieren.");
+        this.el.predictStatus.innerText = "Kein Modell verfügbar – bitte zuerst trainieren.";
+        return false;
+    }
+
     updateSelectionUI() {
         const count = this.selectedIndices.size;
         this.el.selectionStatus.innerText = `${count} Punkte ausgewählt`;
@@ -693,6 +721,7 @@ class ChartApp {
     }
 
     async runPredictionOnData(dataset) {
+        if (!this.ensureModelAvailable()) return;
         if (!dataset || dataset.length === 0) return alert("Keine Daten für Vorhersage vorhanden!");
 
         this.el.predictStatus.innerText = "Berechne Abweichungen...";
@@ -916,6 +945,7 @@ class ChartApp {
     }
 
     async generateTestAndPredict() {
+        if (!this.ensureModelAvailable()) return;
         this.el.predictStatus.innerText = "Generiere neue Testdaten für Chart 2...";
         try {
             const res = await fetch('/generate-test-data', {
@@ -963,6 +993,9 @@ class ChartApp {
                 : 'Schwelle: ' + (result.anomalyThreshold ?? '?') + (result.thresholdCalibrated ? ' (kalibriert)' : ' (Standard)');
             this.el.infoStatus.innerText =
                 `Modell erfolgreich trainiert (${result.normalRecords ?? '?'} Normal-Records, ${result.labeledAnomalyRecords ?? 0} gelabelte Anomalien, Fensterlänge: ${result.timeSteps ?? '?'}, ${thresholdMode})`;
+            // Nach erfolgreichem Training liegt ein Modell im Ordner -> Status
+            // aktualisieren, damit die Predict-Buttons sofort starten können.
+            await this.refreshModelStatus();
         } catch (err) {
             alert("Fehler beim Training.");
         }
