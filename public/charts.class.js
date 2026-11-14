@@ -121,7 +121,12 @@ class ChartApp {
 
             const chart = this.chart1 = root.container.children.push(
                 am5xy.XYChart.new(root, {
-                    panX: true, panY: true, wheelX: "panX", wheelY: "zoomX", pinchZoomX: true
+                    panX: false,      // drag the plot sideways to pan through the dates
+                    panY: false,      // and up and down
+                    wheelX: "panX",  // a horizontal wheel or trackpad swipe pans...
+                    wheelY: "zoomX", // ...and the vertical wheel zooms in on the dates
+                    pinchZoomX: true, // pinch with two fingers to zoom the dates on a touch screen
+                    paddingLeft: 0   // the value labels sit at the chart's left edge
                 })
             );
 
@@ -135,13 +140,21 @@ class ChartApp {
             }));
 
             chart.set("cursor", am5xy.XYCursor.new(root, { behavior: "zoomX" }));
+            chart.set("scrollbarX", am5.Scrollbar.new(root, {
+                orientation: "horizontal"
+            }));
 
             const root2 = this.root2 = am5.Root.new(this.el.chartdiv2);
             root2.setThemes([am5themes_Animated.new(root2)]);
 
             const chart2 = this.chart2 = root2.container.children.push(
                 am5xy.XYChart.new(root2, {
-                    panX: true, panY: true, wheelX: "panX", wheelY: "zoomX", pinchZoomX: true
+                    panX: false,      // drag the plot sideways to pan through the dates
+                    panY: false,      // and up and down
+                    wheelX: "panX",  // a horizontal wheel or trackpad swipe pans...
+                    wheelY: "zoomX", // ...and the vertical wheel zooms in on the dates
+                    pinchZoomX: true, // pinch with two fingers to zoom the dates on a touch screen
+                    paddingLeft: 0   // the value labels sit at the chart's left edge
                 })
             );
 
@@ -170,6 +183,9 @@ class ChartApp {
             });
 
             chart2.set("cursor", am5xy.XYCursor.new(root2, { behavior: "zoomX" }));
+            chart2.set("scrollbarX", am5.Scrollbar.new(root2, {
+                orientation: "horizontal"
+            }));
 
             this.fetchData();
         });
