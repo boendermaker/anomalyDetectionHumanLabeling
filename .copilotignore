@@ -1,0 +1,75 @@
+# Abhängigkeiten & Paketmanager (Node.js)
+node_modules/
+.npm/
+.yarn/
+.pnp.*
+.pnpm-store/
+
+# Build- & Dist-Artefakte
+dist/
+build/
+out/
+.next/
+.nuxt/
+.angular/
+.output/
+.svelte-kit/
+target/
+
+# Cache- & Temp-Verzeichnisse
+.cache/
+.parcel-cache/
+.turbo/
+.vite/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+tmp/
+temp/
+
+# Test- & Coverage-Ausgaben
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Sensible Daten & Umgebungsvariablen
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+secrets/
+
+# Versionskontrolle & IDE-Konfigurationen
+.git/
+.svn/
+.hg/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Lockfiles & große generierte Dateien (verbrauchen unnötig Tokens)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*.min.js
+*.min.css
+*.map
+
+# Lokale Daten, Backups & Container-Volumes
+data/
+backups/
+*.sqlite
+*.db
+docker-data/
